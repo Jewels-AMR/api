@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul><li>123</li></ul>
+  <script>
+   /*  //创建节点
+    const div = document.createEvent('div')
+    //追加节点,插入到父元素末尾
+    document.body.appendChild(div) */
+    const ul = document.querySelector('ul')
+    const li = document.createElement('li')
+    li.innerHTML = '我是li'
+    // ul.appendChild(li)
+    //插入到某个子元素前面
+    // insertBefore(放那个元素，放哪个元素前面)
+    ul.insertBefore(li, ul.children[0])
+  </script>
+</body>
+</html>

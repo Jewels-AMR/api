@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //公式
+    const count = 36600
+    let h = parseInt(count / 60 / 60 % 24)
+      h = h < 10 ? '0' + h : h
+      let m = parseInt(count / 60 % 60)
+      m = m < 10 ? '0' + m : m
+      let s = parseInt(count % 60)
+      s = s < 10 ? '0' + s : s
+      console.log(h, m, s)
+  </script>
+</body>
+</html>

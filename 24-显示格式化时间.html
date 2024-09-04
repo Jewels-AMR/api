@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      margin:50px auto;
+      width: 200px;
+      height: 40px;
+      background-color: #fff;
+      text-align: center;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <script>
+    const div = document.querySelector('div')
+    function Format(n) {
+     return  n > 10 ?n:`0 `+ n
+    }
+    function getdate(){
+      const date = new Date()
+      return `今天是${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日${Format(date.getHours())}时${Format(date.getMinutes())}分${Format(date.getSeconds())}秒`
+    }
+
+    div.innerHTML = getdate()
+    setInterval(function(){
+      div.innerHTML = getdate()
+    }, 1000)
+  </script>
+</body>
+</html>

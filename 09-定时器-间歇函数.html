@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //开启定时器
+    // setInterval(函数， 间隔时间（毫秒为单位）)
+    /* setInterval(function(){
+      console.log(123);
+    }, 1000) */
+
+    function fn() {
+      console.log('啦啦啦');
+    }
+    //函数名不加小括号
+    let n = setInterval(fn, 1000)
+    //关闭定时器 let 变量名 = 定时器  clearInterval(变量名)
+    clearInterval(n)
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: none;
+      overflow: scroll;
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      border-right: 2px solid #000;
+    }
+    body {
+      height: 800px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+    我里面很多文字
+  </div>
+  <script>
+    // 页面滚动事件
+    window.addEventListener('scroll', function(){
+      // console.log('滚动了'); 
+      //获取页面到底滚动了多少像素，被卷去多少   scrollTop
+      //获取html元素写法
+      console.log( document.documentElement.scrollTop);
+      const n = document.documentElement.scrollTop
+
+      if(n >= 100){
+        div.style.display = 'block'
+      }else {
+         div.style.display = 'none'
+      }
+    })
+    const div = document.querySelector('div')
+    div.addEventListener('scroll', function(e){
+      console.log('我滚动了');
+      e,stopP
+    })
+  </script>
+</body>
+</html>

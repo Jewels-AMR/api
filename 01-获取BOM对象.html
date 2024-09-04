@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box"></div>
+  <p id="nav">
+    <ul>
+      <li>111</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </p>
+
+  <script>
+    //语法document.querySelector('css选择器')
+    //1.获取匹配的第一个元素(默认只获取第一个)
+    const box = document.querySelector('div')
+    const nav = document.querySelector('#nav')
+    const li = document.querySelector('ul li')
+    //选中全部语法  document.querySelectorAll('css选择器')
+    const lis = document.querySelectorAll('ul li')
+  </script>
+</body>
+</html>
